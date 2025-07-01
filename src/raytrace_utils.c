@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   raytrace_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
+/*   By: wpepping <wpepping@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:26:24 by phartman          #+#    #+#             */
-/*   Updated: 2024/10/22 13:32:22 by phartman         ###   ########.fr       */
+/*   Updated: 2025/01/22 16:25:43 by wpepping         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -5,7 +5,7 @@ OBJDIR := objs
 OBJDIR_BONUS := objs_bonus
 GNLDIR = get_next_line
 CC := cc
-CFLAGS := -Wall -Wextra -Werror
+CFLAGS := -Wall -Wextra -Werror -g
 
 SRCS := src/bonus_textures.c src/cleanup.c src/cub3d.c src/doors.c src/enemy.c\
 		src/environment.c src/events2.c src/events.c src/game_logic.c\

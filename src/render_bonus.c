@@ -6,7 +6,7 @@
 /*   By: wpepping <wpepping@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 12:30:08 by wpepping          #+#    #+#             */
-/*   Updated: 2024/10/25 12:32:34 by wpepping         ###   ########.fr       */
+/*   Updated: 2025/01/29 18:03:02 by wpepping         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static void	draw_gun(t_data *data)
 
 	size.x = data->textures->gun[data->player->gun_texture].width;
 	size.y = data->textures->gun[data->player->gun_texture].height;
-	img_start.x = (WINDOW_WIDTH - size.x) / 2;
+	img_start.x = (WINDOW_WIDTH) / 2;
 	img_start.y = WINDOW_HEIGHT - size.y;
 	i = 0;
 	j = 0;

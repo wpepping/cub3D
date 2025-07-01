@@ -6,7 +6,7 @@
 /*   By: wpepping <wpepping@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 12:26:41 by wpepping          #+#    #+#             */
-/*   Updated: 2024/10/25 12:32:41 by wpepping         ###   ########.fr       */
+/*   Updated: 2025/02/06 20:00:18 by wpepping         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,16 +45,19 @@ void	render_frame(t_data *data)
 
 static void	draw_env(t_ray *rays, t_data *data)
 {
-	int	i;
-	int	j;
-	int	height;
-	int	wall_top;
+	int		i;
+	int		j;
+	double	height;
+	int		wall_top;
 
 	i = -1;
 	while (++i < WINDOW_WIDTH)
 	{
-		height = (int)projected_wall_height(data->focal_len, rays[i].dist);
-		wall_top = WINDOW_HEIGHT / 2 - height / 2;
+		height = projected_wall_height(data->focal_len, rays[i].dist);
+		if (height > WINDOW_HEIGHT)
+			wall_top = 0;
+		else
+			wall_top = WINDOW_HEIGHT / 2 - height / 2;
 		j = 0;
 		while (j < wall_top && j < WINDOW_HEIGHT)
 			draw_ceiling(data, i, j++, data->textures->ceiling.img_ptr != NULL);

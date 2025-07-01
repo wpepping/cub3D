@@ -6,7 +6,7 @@
 /*   By: wpepping <wpepping@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 19:13:24 by wpepping          #+#    #+#             */
-/*   Updated: 2024/10/25 12:41:42 by wpepping         ###   ########.fr       */
+/*   Updated: 2025/07/01 18:36:02 by wpepping         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@
 # define MOVE_SPEED 0.01
 # define ENEMY_MOVE_SPEED 0.02
 # define MOUSE_SENSITIVITY 0.001
-# define ROTATE_SPEED 0.001
+# define ROTATE_SPEED 0.00005
 # define MS_BETWEEN_FRAMES 10
 # define MOVEMENT_DELAY 10
 # define DOOR_STEP 5
